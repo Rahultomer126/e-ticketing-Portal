@@ -1,0 +1,19 @@
+
+button{
+    background: rgb(72, 84, 121);
+    margin: 10px 20px 10px 10px;
+    font-size: 20px;
+    border-radius: 12px;
+    color:white;
+    height: 50px;
+    width: 100px;
+}
+.left{
+    padding-left: 18%;
+}
+.right{
+    padding-left: 35%;
+}
+marquee{
+    font-size: 22px;
+}

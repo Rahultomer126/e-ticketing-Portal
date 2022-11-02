@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+  </head>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+    body {
+      background: #456;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .login {
+      width: 400px;
+      margin: 16px auto;
+      font-size: 16px;
+    }
+
+    /* Reset top and bottom margins from certain elements */
+    .login-header,
+    .login p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    /* The triangle form is achieved by a CSS hack */
+    .login-triangle {
+      width: 0;
+      margin-right: auto;
+      margin-left: auto;
+      border: 12px solid transparent;
+      border-bottom-color: #28d;
+    }
+
+    .login-header {
+      background: #28d;
+      padding: 20px;
+      font-size: 1.4em;
+      font-weight: normal;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .login-container {
+      background: #ebebeb;
+      padding: 12px;
+    }
+
+    /* Every row inside .login-container is defined with p tags */
+    .login p {
+      padding: 12px;
+    }
+
+    .login input {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-width: 1px;
+      border-style: solid;
+      padding: 16px;
+      outline: 0;
+      font-family: inherit;
+      font-size: 0.95em;
+    }
+
+    .login input[type="email"],
+    .login input[type="password"] {
+      background: #fff;
+      border-color: #bbb;
+      color: #555;
+    }
+
+    /* Text fields' focus effect */
+    .login input[type="email"]:focus,
+    .login input[type="password"]:focus {
+      border-color: #888;
+    }
+
+    .login input[type="submit"],
+    .priceButton {
+      background: #28d;
+      border-color: transparent;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .login input[type="submit"]:hover,
+    .priceButton {
+      background: #17c;
+    }
+
+    /* Buttons' focus effect */
+    .login input[type="submit"]:focus,
+    .priceButton {
+      border-color: #05a;
+    }
+    .priceButton {
+      background-color: #05a;
+    }
+    button {
+      background-color: #05a;
+    }
+  </style>
+  <body>
+    <iframe width="100%" height="80" src="Header.html"></iframe>
+
+    <div class="cartMain">
+      <p
+        style="
+          text-align: center;
+          color: white;
+          font-size: 50px;
+          font-weight: bold;
+        "
+      >
+        Book Your Ticket
+      </p>
+      <div class="login">
+        <div class="login-triangle"></div>
+
+        <h2 class="login-header">Book</h2>
+
+        <form class="login-container">
+          <p>
+            <input
+              type="text"
+              value="Ticket Price -- Adults 100 Rs. & Children: 50 Rs."
+              readonly
+            />
+          </p>
+          <p>
+            <input type="number" id="noOfAdults" placeholder="No of Adults" />
+          </p>
+          <p>
+            <input
+              type="number"
+              id="noOfChildren"
+              placeholder="No of Children"
+            />
+          </p>
+          <p>
+            <input
+              type="button"
+              id="priceButton"
+              value="Total amount"
+              onclick="calcPrice()"
+              readonly
+            />
+          </p>
+          <p>
+            <input type="text" id="price" value="Total Price: 0" readonly />
+          </p>
+
+          <p style="text-align: center; color: white; background-color: #05a">
+            <a
+              style="width: 100%; text-decoration: none; color: white"
+              href="pay.html"
+              >Proceed to Payment</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+    <iframe
+      src="Footer.html"
+      width="100%"
+      height="600"
+      style="border: 0"
+    ></iframe>
+   <!-- Start of ChatBot (www.chatbot.com) code -->
+<script type="text/javascript">
+  window.__be = window.__be || {};
+  window.__be.id = "6242c289ca07610009d0b6ac";
+  (function() {
+      var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+      be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+  })();
+</script>
+<!-- End of ChatBot code -->
+  </body>
+  <script>
+    function calcPrice() {
+      // e.preventDefault();
+      var noOfAdults = document.getElementById("noOfAdults").value;
+      var noOfChildren = document.getElementById("noOfChildren").value;
+      var totalPrice = noOfAdults * 100 + noOfChildren * 50;
+      document.getElementById(`price`).value = `Total Price: ${totalPrice}`;
+    }
+  </script>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="list.css" />
+    <link rel="stylesheet" href="all.css" />
+  </head>
+  <body>
+    <iframe width="100%" height="80" src="Header.html"></iframe>
+
+    <img src="https://drive.google.com/uc?export=view&id=1oT2kR1OoRSPxQG1InoI0a9z9MzdPWL3R" alt="Ministry of India" style="text-align: left;
+  width: 130px;
+  height: 130px;
+  display:inline-flex;
+  position:absolute;">
+    <h1 style="text-align: center">Monuments/Museum Lists</h1>
+    <div class="listMain">
+      <div id="sidebar1">
+        <h2 style="text-align: center">Select city</h2>
+        <label> CITY : </label><br />
+        <form>
+          <input type="radio" name="d" onclick="show(`delhi`);" />
+          Delhi<br />
+          <input type="radio" name="d" onclick="show(`jaipur`);" /> Jaipur
+          <br />
+          <input type="radio" name="d" onclick="show(`chandigarh`);" />
+          Chandigarh<br />
+          <input type="radio" name="d" onclick="show(`bangalore`);" />
+          Bangalore <br />
+          <input type="radio" name="d" onclick="show(`mumbai`);" />
+          Mumbai<br />
+          <br />
+        </form>
+        <!-- <button onclick="()=>{}">Show</button> -->
+      </div>
+
+      <br />
+
+      <div id="sidebar2">
+        <h2 style="text-align: center">Select Monuments/Museum</h2>
+        <div id="delhi" class="hide">
+          <label> Delhi : </label><br />
+          <input type="radio" name="Abc" /> Qutub Minar<br />
+          <input type="radio" name="Abc" /> Hauz Khas<br />
+          <input type="radio" name="Abc" /> Red Fort<br />
+          <br />
+        </div>
+        <div id="jaipur" class="hide">
+          <label> Jaipur : </label><br />
+          <input type="radio" name=" rh" /> Ancient Site,Bhangarh<br />
+          <input type="radio" name=" rh" /> Baori At Abhaneri <br />
+          <input type="radio" name=" rh" /> Deeg Bhawan<br />
+
+          <br />
+        </div>
+        <div id="chandigarh" class="hide">
+          <label> Chandigarh : </label><br />
+          <input type="radio" name="an" />Archaeological Site Museum, Ropar<br />
+          <input type="radio" name="an" />Sheikh Chilli’S Tomb<br />
+          <input type="radio" name="an" />One Hand monument<br />
+          <br />
+        </div>
+        <div id="bangalore" class="hide">
+          <label> Bangalore : </label><br />
+          <input type="radio" name="al" />Archaeological Museum, Halebidu<br />
+          <input type="radio" name=" al" />Keshava Temple, Somanathpur<br />
+          <input type="radio" name="al" />Palace Of Tipu Sultan, Bengaluru<br />
+          <br />
+        </div>
+        <div id="mumbai" class="hide">
+          <label> Mumbai : </label><br />
+          <input type="radio" name="al" />Aga Khan Palace Building, Pune<br />
+          <input type="radio" name="al" />Cave, Temple & Inscriptions, Bhaja<br />
+          <input type="radio" name="al" />Kolaba Fort, Alibag<br />
+          <br />
+        </div>
+      </div>
+    </div>
+    <br />
+    <p style="text-align: center">
+      <button>
+        <a href="info.html"
+          >Next</a
+        >
+      </button>
+    </p>
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+<script type="text/javascript">
+  window.__be = window.__be || {};
+  window.__be.id = "6242c289ca07610009d0b6ac";
+  (function() {
+      var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+      be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+  })();
+</script>
+<!-- End of ChatBot code -->
+    <iframe width="100%" height="1000" src="footer.html"></iframe>
+  </body>
+  <script>
+    var count = 0;
+    var previous;
+    function show(id) {
+      if (count === 0) {
+      } else {
+        document.getElementById(previous).style.display = "none";
+      }
+      previous = id;
+      document.getElementById(id).style.display = "block";
+      count++;
+    }
+  </script>
+</html>

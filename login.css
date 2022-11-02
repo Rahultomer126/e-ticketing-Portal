@@ -1,0 +1,177 @@
+.header{
+  background-color: #fff;
+  height: 45px;
+}
+header a img{
+  width: 134px;
+margin-top: 4px;
+}
+#cb{
+  text-align: right;
+
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  width: 300px;
+  height: 300px;
+}
+.id{
+  float: right;
+  display: block;
+  margin-left: auto;
+  width: 130px;
+  height: 130px;
+  display:inline-flex;
+  position:absolute;
+}
+h1{
+  text-align: center;
+  color: #e6e358;
+}
+marquee{
+  color:white;
+}
+img{
+  text-align: left;
+  width: 130px;
+  height: 130px;
+  display:inline-flex;
+  position:absolute;
+}
+.login-page {
+  width: 360px;
+  padding: 2% 0 0;
+  margin: auto;
+}
+.main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-page .form .login{
+  margin-top: -31px;
+margin-bottom: 26px;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+.feature-block h3 {
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.font-md {
+  font-size: 18px;
+}
+h3 {
+  font-size: 28px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3, .h3 {
+  font-size: 24px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+
+
+
+.feature-block {
+  display: inline-block;
+  width: 280px;
+  padding: 33px 24px 15px 24px;
+  text-align: center;
+  position: relative;
+  background: rgba(0, 44, 93, 0.03) 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  min-height: 135px;
+  transform: translateY(4em);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1), opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+}
+.text-center {
+  text-align: center;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}

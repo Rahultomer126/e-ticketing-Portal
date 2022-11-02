@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  .slideshowImage {
+    height: 70vh;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    background-color: crimson;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    /* bottom: 8px; */
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 15</div>
+    <img
+      class="slideshowImage"
+      src="C:\Users\HP\Desktop\new\Project\humayuns_tomb.jpg"
+      style="width: 100%"
+    />
+    <div class="text" style="">
+      <h2>Humayuns Tomb</h2>
+      Predating the Taj Mahal by 60 years, and echoing the sentiment behind its creation where a grieving husband built a mausoleum in the memory of his beloved wife, the Humayun’s Tomb was the result of a wife’s love for her deceased husband. Incorporating Persian and Mughal architectural elements, this one-of-a-kind garden tomb was built mid-16th century in the memory of Mughal Emperor Humayun by his Persian-born first wife, Haji Begum. The interspersing of red sandstone and white marble in its arched facades is the striking feature of this mausoleum that from a distance seems to hover mid air. Little wonder, the grand scale of the structure, the Islamic geometry, restrained decoration, and the symmetrical gardens are believed to be an inspiration for the Taj Mahal in Agra. </div>
+    </div>
+  </div>
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 15</div>
+      <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\hauz-khas.jpg" style="width: 100%"/>
+      <div class="text" style="">
+        <h2>Hauz Khas</h2>
+        Amidst the posh neighbourhoods of South Delhi, lies the historical site of the Hauz Khas complex. Hauz Khas dates back to the early 14th century during the reign of Ala-ud-Din Khalji. The site preserves an ancient water reservoir that was built by Ala-ud-Din Khalji to supply water to the inhabitants of Siri Fort.
+        The major tourist attractions in and around the Hauz Khas complex are the Royal Tank (Hauz Khas), Siri Fort, Madrasa, Firuz Shah Tughlaq's tomb and the cultural essence of the Hauz Khas village. Today its vicinity hosts many ethnic restaurants, bars, pubs and cafes.
+        The Siri Fort was built between 1297 CE and 1307 CE to defend against Mongol invasions of India and Delhi. The Fort served as the seat of the Khilji Dynasty. In the later years the fort was linked to the fortifications of Jahanpanah, a township that was built by Mohammad Bin Tughlak. Siri is believed to be one of the oldest cities of Delhi. The Siri Fort still holds the prominent structures of palaces, doors, mosques, gates and bastions.      </div>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 15</div>
+        <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\Redfort.png" style="width: 100%"/>
+        <div class="text" style="">
+          <h2>Red Fort</h2>
+                Amidst the posh neighbourhoods of South Delhi, lies the historical site of the Hauz Khas complex. Hauz Khas dates back to the early 14th century during the reign of Ala-ud-Din Khalji. The site preserves an ancient water reservoir that was built by Ala-ud-Din Khalji to supply water to the inhabitants of Siri Fort.
+                The major tourist attractions in and around the Hauz Khas complex are the Royal Tank (Hauz Khas), Siri Fort, Madrasa, Firuz Shah Tughlaq's tomb and the cultural essence of the Hauz Khas village. Today its vicinity hosts many ethnic restaurants, bars, pubs and cafes.
+                The Siri Fort was built between 1297 CE and 1307 CE to defend against Mongol invasions of India and Delhi. The Fort served as the seat of the Khilji Dynasty. In the later years the fort was linked to the fortifications of Jahanpanah, a township that was built by Mohammad Bin Tughlak. Siri is believed to be one of the oldest cities of Delhi. The Siri Fort still holds the prominent structures of palaces, doors, mosques, gates and bastions.      </div>
+            </div>
+
+                <div class="slideshow-container">
+                  <div class="mySlides fade">
+                    <div class="numbertext">4 / 15</div>
+                    <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\Bhangarh.jpg" style="width: 100%"/>
+                    <div class="text" style="">
+                      <h2>Bhangarh</h2>
+                      Bhangarh is perhaps one of India’s most haunted locations. It is in Rajasthan and even the government has declared it an unsafe place to visit at night. India’s Archeological Survey or ASI body also placed a sign outside of Bhangarh Fort to warn visitors and locals alike not to reach their premises after sunset and before sunrise. While the government does not freely recognise the existence of any supernatural force here, the board says it all and is ample proof that there exists something that is not to be played with.</div>
+                  </div>
+
+                  <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">5 / 15</div>
+                      <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\Baori.jpg" style="width: 100%"/>
+                      <div class="text" style="">
+                        <h2>Baori at Abhaneri</h2>
+                        Chand Baori at Abhaneri Village in Rajasthan is the most photogenic step well of India. When you stand next to this 13 story deep step well with symmetric triangular steps leading to the water at the bottom, you cannot but be mesmerized. You, of course, understand that in the desert of Rajasthan, it is a practical water management solution. It also serves as a natural cooler in summer months. But, what inspired the people of those days to build it so beautifully. Were all the public spaces so beautiful in 9th CE? I wonder how India would have looked then.</div>
+                      </div>
+                  
+                      <div class="slideshow-container">
+                        <div class="mySlides fade">
+                          <div class="numbertext">6 / 15</div>
+                          <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\Deeg-Palace.jpg" style="width: 100%"/>
+                          <div class="text" style="">
+                            <h2>Deeg Bhawan</h2>
+                            Suraj Bhawan is one of the pavilions of 18th century Deeg Palace or Deeg Bhawans, which is popularly known as Water palaces or Jal Mahal. Suraj Bhawan has been named after Suraj Mal of Jat Dynasty, who was the ruler of Bharatpur district of Rajasthan. He built the Bhawans of the Deeg palace. Suraj Bhawan is one of the most attractive buildings, which has been made of marble and the architectural treatment of this pavilion bears some similarities with the Mughal architectural pattern. The construction of Suraj Bhawan was started by Suraj Mal, but after his death it was completed by his son Jawahar Singh. This building is made of marble from Makrana, Rajasthan.      </div>
+                              </div>
+
+                              <div class="slideshow-container">
+                                <div class="mySlides fade">
+                                  <div class="numbertext">7 / 15</div>
+                                  <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\Deeg-Palace.jpg" style="width: 100%"/>
+                                  <div class="text" style="">
+                                    <h2>Archeological Museum, Ropar</h2>
+                                    The Archaeological Museum is situated in Rupnagar town situated on the bank of sutlej river. Opened to public in the year 1998, the museum houses the archaeological remains of excavated site near Ropar, the first Harappan site excavated in Independent India. The excavation revealed a cultural sequence from Harappan to medieval times. Important exhibits include antiquities of Harappan times, Painted Grey ware culture, Saka, Kushana, Gupta times such as Vina Vadini (lady playing on vina), steatite seal, copper and bronze implements, ring stone, yakshi image, gold coins of Chandragupta.</div>
+                                      </div>
+
+                                      <div class="slideshow-container">
+                                        <div class="mySlides fade">
+                                          <div class="numbertext">8 / 15</div>
+                                          <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\sheikh-chillis-tomb.jpg" style="width: 100%"/>
+                                          <div class="text" style="">
+                                            <h2>Sheik Chili's Tomb</h2>
+                                            Sheik Chili's Tomb is complex of structures situated in Thanesar, Haryana, India, close Kurukshetra. It incorporates two tombs, a madarsa, mughal gardens and different consequent highlights. There are two tombs, a madarsa, a lovely garden and a little archeological exhibition hall. A second tomb is devoted to Sheik Chili's significant other. Sheik Chili's tomb has an octagonal figure, built from buff sandstone and has a pearl molded marble arch that sits on its best like a crown. His better half's tomb is produced using red sandstone, has a marble arch and cut flower plans. It is likewise accepted to be like Taj Mahal in specific perspectives.  </div>
+                                            The exhibition hall houses a few seals, earthenware figures, decorations, swords, and so forth from different kingdoms that existed among first and seventh hundreds of years. The vast majority of the structures in this complex have a significant pinch of Persian engineering.</div>                                              
+                                          </div>
+
+                                          <div class="slideshow-container">
+                                         <div class="mySlides fade">
+                                          <div class="numbertext">9 / 15</div>
+                                         <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\hand.jpg" style="width: 100%"/>
+                                        <div class="text" style="">
+                                        <h2>One Hand monument</h2>
+                                        Standing 25m tall at the Capitol Complex of Chandigarh city, the Open Hand monument is the symbol for the government of Chandigarh. Le Corbusier masterminded this sculpture of a gigantic hand to symbolize that people of Chandigarh are open to receive and open to give. It spreads the sense of optimism in this catastrophic world. The hand can rotate with the wind, thanks to the ball bearing above of it. This rotation symbolizes the true meaning of life- constant change. This monument, the only political portrayal of Le Corbusier is definitely a must-visit among the top 30 places to visit in Chandigarh.</div>                                              
+                                        </div>
+
+                                        <div class="slideshow-container">
+                                          <div class="mySlides fade">
+                                            <div class="numbertext">10 / 15</div>
+                                            <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\Archaeological-Site-Museum.jpg" style="width: 100%"/>
+                                            <div class="text" style="">
+                                              <h2>Archaeological Museum, Halebidu</h2>
+                                              The museum was established in the early part of 1970’s. This museum has more than 1500 sculptures, architectural members, inscriptions of historical significance retrieve in and around Halebidu. The collection is displayed in a closed sculpture gallery as well as in an open air museum with a large reserve collection. It also display 18’ Tirthankara image from the ruined tank of one of the Jaina basadis. The open air museum has in its display many sculptures of importance like Govardhanagiridhari Krishna, dancing Shiva, Nataraja and Veena Saraswati, dancing Ganesha, elegant couchant Nandi to name a few. The Sculptures of Brahma-Saraswati, Nagna Kala Bhairava, Mother and Child, wooden carvings and a bronze statue of a Tirthankara have been the important display in the sculpture gallery.</div>                                              
+                                            </div>
+                                        
+                                            <div class="slideshow-container">
+                                              <div class="mySlides fade">
+                                               <div class="numbertext">11 / 15</div>
+                                              <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\somnathpur.jpg" style="width: 100%"/>
+                                             <div class="text" style="">
+                                             <h2>Keshava Temple, Somanathpur</h2>
+                                             Somanathapura Keshava Temple One of the finest of Hoysala style architectures, in Mysore district, Karnataka By Pradeep Hegde on Saturday, March 22, 2014Share Keshava temple of Somanathpur, one of the finest and well preserved Hoysala era temples, which is nearby the historic Mysuru city. Keshava Temple of Somanathpur Keshava Temple at Somanathapura (a.k.a Somnathpur, Somanathpur, etc.), just 36 kilometres from the historic Mysuru city (formerly called by its anglicised name Mysore) in Mysore district of Karnataka, is an excellent example of the spectacular Hoysala style of temple architecture. Adorned by intricately and beautifully carved ornate sculptures, pillars, lintels, and ceilings, this temple dedicated to the Hindu deity Keshava, or Shri Krishna, is a magnificent work of art in architecture and it is one of the few well-preserved Hoysala monuments or temples. </div>
+                                             </div>
+
+                                             <div class="slideshow-container">
+                                              <div class="mySlides fade">
+                                                <div class="numbertext">12 / 15</div>
+                                                <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\tipu.jpg" style="width: 100%"/>
+                                                <div class="text" style="">
+                                                  <h2>Palace Of Tipu Sultan, Bengaluru</h2>
+                                                  Tipu Sultan’s Summer Palace, in Bangalore is an example of Indo-Islamic architecture and was the summer residence of the Mysorean ruler Tipu Sultan. Hyder Ali commenced its construction within the walls of the Bangalore Fort, and it was completed during the reign of Tipu Sultan in 1791. After Tipu Sultan’s death in the Fourth Anglo-Mysore War, the British Administration used the palace for its Secretariat before moving to Attara Kacheri in 1868. Today The Archaeology Survey of India maintains the palace, which is located at the centre of Old Bangalore near Kalasipalyam bus stand, as a tourist spot.</div>                                              
+                                                </div>
+
+                                                <div class="slideshow-container">
+                                                  <div class="mySlides fade">
+                                                    <div class="numbertext">13 / 15</div>
+                                                    <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\AgaKhanPalace.jpg" style="width: 100%"/>
+                                                    <div class="text" style="">
+                                                      <h2>Aga Khan Palace Building, Pune</h2>
+                                                      The palace was built in 1892 by Sultan Muhammed Shah Aga Khan III who was a Muslim ruler in Pune, India. The palace was, in fact, an act of charity to help the poor in the neighbouring areas of Pune, who were drastically hit by famine. Mahatma Gandhi – the father of the nation was imprisoned here by the Britishers after he started the “Quit India Movement” for India’s independence from British. In 1969, the successor of Sultan Muhammed Shah Aga Khan III - Prince Karim El Hussenim Aga Khan IV donated the palace to the Gandhi Smarak Samiti to show his respect towards Mahatma Gandhi. It took a total of 5 years for the palace to be constructed and around 1,000 workers were employed in its construction. A total of 12 lakh rupees were reportedly spent in building this grand palace.</div>                                              
+                                                    </div>
+
+                                                    <div class="slideshow-container">
+                                                      <div class="mySlides fade">
+                                                        <div class="numbertext">14 / 15</div>
+                                                        <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\nanchis-fun-facts-friday-bhaja-caves.jpg" style="width: 100%"/>
+                                                        <div class="text" style="">
+                                                          <h2>Cave, Temple & Inscriptions, Bhaja</h2>
+                                                            Bhaja Caves or Bhaje caves is a group of 22 rock-cut caves dating back to the 2nd century BC located in Pune district, near Lonavala, Maharashtra. The caves are 400 feet above the village of Bhaja, on an important ancient trade route running from the Arabian Sea eastward into the Deccan Plateau (the division between North India and South India). The inscriptions and the cave temple are protected as a Monument of National Importance, by the Archaeological Survey of India per Notification No. 2407-A. It belongs to the Hinayana Buddhism sect in Maharashtra. The caves have a number of stupas, one of their significant features. The most prominent excavation is its chaitya (or chaityagrha – Cave XII), a good example of the early development of this form from wooden architecture, with a vaulted horseshoe ceiling. Its vihara (Cave XVIII) has a pillared verandah in front and is adorned with unique reliefs. These caves are notable for their indications of the awareness of wooden architecture. The carvings prove that tabla – a percussion instrument – was used in India for at least two thousand years. The carving shows a woman playing tabla and another woman, performing dance.       </div>                                                   
+                                                        </div>
+
+                                                          <div class="slideshow-container">
+                                                            <div class="mySlides fade">
+                                                              <div class="numbertext">15 / 15</div>
+                                                              <img class="slideshowImage" src="C:\Users\HP\Desktop\new\Project\Kolaba-Fort.jpg" style="width: 100%"/>
+                                                              <div class="text" style="">
+                                                                <h2>Kolaba Fort</h2>
+                                                                  The first mention of Kolaba fort is when it was chosen by Shivaji Maharaj to be fortified after the whole of South Konkan became free. The work of construction of the fort started in 19 March 1680. In 1662, he strengthened and fortified Kolaba fort to make it one of his chief naval stations. The command of the fort was given to Darya Sagar and Manik Bhandari under whom Kolaba fort became the centre of the Maratha attacks on British ships.[3] Kolaba fort is one the fort which was captured by Shivaji Maharaj. The fort was completed by Sambhaji Maharaj after the death of Shivaji Maharaj in June 1681. In 1713 under a treaty with Peshwa Balaji Vishwanath, Kolaba along with several other forts was given over to Kshtriya koli king shrimant Kanhoji Raje Angre. He used it as his main base from which to launch raids on British ships. In 17 November 1721, the British incensed at Angre’s activities, joined the Portuguese in an expedition against Kolaba.                </div>                                                 
+                                                                </div>
+                                                                <br<br><br><br><br><br><br<br><br><br><br><br><br>
+                                                                <p style="text-align: left"><button><a href="Booking.html">Next</a></button></p>
+    
+                                              
+                                            
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br />
+
+<!-- The dots/circles -->
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
+</script>
+<!-- Start of ChatBot (www.chatbot.com) code -->
+<script type="text/javascript">
+  window.__be = window.__be || {};
+  window.__be.id = "6242c289ca07610009d0b6ac";
+  (function() {
+      var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+      be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+  })();
+</script>
+<!-- End of ChatBot code -->
+
+<body>
+  
+</body>
+</html>

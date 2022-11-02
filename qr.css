@@ -1,0 +1,12 @@
+img{
+    height: 250px;
+    width: 250px;
+    text-align: center;
+}
+
+button{
+    background: darkcyan;
+    color:white;
+    height: 50px;
+    width: 100px;
+}
